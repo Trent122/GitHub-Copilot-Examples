@@ -1,6 +1,6 @@
 # GitHub-Copilot-Examples
 
-This respiratory is geared towards Github-Copilot example for testing our contract with deployment on the Remix.IDE.
+Github-Copilot production examples for testing contract's with deployment through Remix.IDE.
 
 ```Solidity By Example``` https://solidity-by-example.org/
 
