@@ -1,0 +1,15 @@
+pragma solidity ^0.8.4;
+
+contract viewAndPure {
+    uint private x = 0;
+
+    //Not to modify the state of the contract
+    function addTox(uint _x) public view returns (uint) {
+        return x + _x;
+    }
+
+    //No modifier, no state change
+    function add(uint i,uint j) public pure returns (uint) {
+        return i + j;
+    }
+}
