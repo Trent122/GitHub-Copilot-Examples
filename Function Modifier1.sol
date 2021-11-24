@@ -23,3 +23,31 @@ contract FunctionModifier {
     //Execute the rest of the code into compile time
     //End of Part 1
 }
+
+//Start of Part 2
+
+function changeOwner(address _newOwner) public onlyOwner validAddress(_newOwner {
+    owner = _newOwner;
+}
+
+//Modifier can be called before and / or after a function.
+//This modifer prevents a function from being called while
+//it is still executing
+modifier noReentrancy() {
+    require(!locked, "No reentrancy");
+
+    locked = true;
+    _;
+    locked = false;
+ }
+
+  function decrement(uint i) public noReentrancy {
+    x -= i;
+
+     if (i > 1) {
+        decrement(i - 1);
+    }
+  }
+}
+
+//^ Second Portion of the code book for function and modifier
