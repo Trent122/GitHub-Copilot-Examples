@@ -1,6 +1,6 @@
 # GitHub-Copilot-Examples
 
-Github-Copilot production examples for testing contract's with deployment through Remix. I.D.E
+Github-Copilot production examples for testing contract's with deployment through Remix. I.D.E...
 
 ```Solidity By Example``` https://solidity-by-example.org/
 
