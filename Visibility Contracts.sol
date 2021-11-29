@@ -7,3 +7,7 @@ contract Base {
     function privateFunc() private pure returns (string memory) {
         return "private function called";
     }
+    
+    function testPrivateFunc() public pure returns (string memory) {
+        return privateFunc();
+    }
