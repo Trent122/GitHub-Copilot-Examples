@@ -11,3 +11,10 @@ contract Base {
     function testPrivateFunc() public pure returns (string memory) {
         return privateFunc();
     }
+
+    // Internal function can be called
+    // - inside this contract
+    // - inside contracts that inherit this contract
+    function internalFunc() internal pure returns (string memory) {
+        return "internal function called";
+    }
