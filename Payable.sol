@@ -37,3 +37,5 @@ contract Payable {
         require(success, "Failed to send Ether");
     }
 }
+
+Functions and addresses declared payable can receive ether into the contract.
